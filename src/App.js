@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import './App.css';
+import Initial from "./components/Inicial/Initial.jsx";
+import Projects from "./components/Projects/Projects.jsx";  // Supondo que você tenha esse componente
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Initial />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
