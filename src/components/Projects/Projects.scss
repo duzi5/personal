@@ -11,16 +11,32 @@ body, html{
      justify-content: center;
      flex-wrap: wrap;
      .link{
+        position: absolute;
         width: 80%;
         height: 50%;
-
+        margin: 30px;
         padding: 10%;
+        display: inline-block; /* Necessário para aplicar transformações */
+        padding: 10px 20px;    /* Apenas para dar alguma estrutura */
+        background-color: #007BFF; /* Uma cor de fundo para visibilidade */
+        color: white;          /* Cor do texto */
+        text-decoration: none; /* Remover sublinhado padrão para links */
+        transition: transform 0.3s ease; /* Adiciona uma transição suave para o hover */
+        
+        /* Aplica a perspectiva lateral (inclinação) */
+        transform: skewZ(-15deg); 
+    }
+    .link1{
+        
+        transform: skew(-15deg); 
      }
      .link1:hover{
         background-color: rgb(204, 209, 209);
+        transform: skewZ(-5deg);
      }
      .link2:hover{
         background-color: rgb(227, 230, 230);
+        transform: skewZ(-5deg);
      }
      h3{
         font-size: 9em;
@@ -44,3 +60,7 @@ body, html{
         background-color: rgb(67, 196, 196);
         
     }
+    .original-transform {
+        transform-origin: 45% 66%;
+        transform: rotate(360deg) translate(-52px, -14px) scale(0.78, 0.86) skew(6deg, 28deg);
+      }

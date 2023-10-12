@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import "./Initial.scss"
 import gsap from 'gsap';
-const ProjectButton = () => {
+const MenuButton = ({text, link}) => {
     useEffect(()=>{
         gsap.to(".btn-projects", {duration: 1, opacity: 1, ease: "inOut", repeat:-1})
         
@@ -14,7 +14,7 @@ const ProjectButton = () => {
             opacity: 0,
             ease: "inOut",
             onComplete: () => {
-                window.location.href = "/projects"
+                window.location.href = "/" + link
             }
         } )
     }
@@ -25,9 +25,9 @@ const ProjectButton = () => {
     return (
 
         <div>
-            <button onClick={showProjects} className="btn-projects">PROJECTS</button>
+            <button onClick={showProjects} className="btn-projects">{text}</button>
         </div>
     );
 }
 
-export default ProjectButton;
+export default MenuButton;

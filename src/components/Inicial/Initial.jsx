@@ -3,7 +3,8 @@ import Typed from 'typed.js';
 import "./Initial.scss"
 import foto from "./foto.jpeg"
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin } from 'react-icons/ai';
-import ProjectButton from './ProjectButton';
+
+import MenuButton from './MenuButton';
 export default function Initial() {
   // Create reference to store the DOM element containing the animation
   const el = React.useRef(null);
@@ -23,7 +24,10 @@ export default function Initial() {
 
   return (
     <div className="Initial">
-      <ProjectButton />
+      <div className="menu">
+        <MenuButton text="Bio" link={"bio"} />
+        <MenuButton text="Projects" link={"projects"} />
+      </div>
     <div className='foto'>
       <img src={foto} alt="" />
     </div>

@@ -10,7 +10,7 @@ const Projects = () => {
         <p>I find myself divided between Studio Catavento and Akiva, my current challenges. It's been a genuine pleasure to develop and nurture both ventures.</p>
       </div>
       <div className="links">
-        <div className="link1 link">
+        <div className="link1 link original-transform">
           <h3>Akiva</h3>
           <h4>Empower Your Family's Financial Future with Akiva!</h4>
           <p>
@@ -47,7 +47,7 @@ const Projects = () => {
             </li>
           </ul>
         </div>
-        <div className="link2 link">
+        <div className="link2 link original-transform">
           <h3>Studio Catavento</h3>
           <h5>for Web Art</h5>
           <h4>Bring Ideas to Life with Studio Catavento!</h4>
