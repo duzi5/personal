@@ -9,10 +9,12 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={<Initial />} />
           <Route path="/projects" element={<Projects />} />
-        </Routes>
+        </Routes> */}
+        <Initial />
+        <Projects />
       </div>
     </BrowserRouter>
   );

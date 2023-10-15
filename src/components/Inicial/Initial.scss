@@ -3,26 +3,7 @@
 
 
 
-.span{
-    font-size: 4rem;
-    font-weight: 200;
-}
 
-img{
-    width: 50vw;
-    max-width: 400px;
-    border-radius: 50%;
-    border:1px solid rgb(11, 11, 11);
-    margin-top: 5%;
-    filter: contrast(2);
-    -webkit-box-shadow: 10px 21px 43px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 21px 43px -4px rgba(0,0,0,0.75);
-    box-shadow: 10px 21px 43px -4px rgba(0,0,0,0.75);
-}
-a{
-
-    font-size: 3vh;
-}
 
 
 
@@ -36,9 +17,35 @@ a{
     background-color: rgb(239, 239, 239);
     color: rgb(11, 11, 11);
     position: relative;
+    border-bottom: 5px rgb(95, 95, 95) solid ;
+    background-image: url('./fundo.jpg');
+    background-position: 100%;
+    background-repeat: none;
+    background-size: cover;
+    .span{
+        font-size: 4rem;
+        font-weight: 200;
+    }
     
+    img{
+        width: 50vw;
+        max-width: 400px;
+        border-radius: 50%;
+        border:9px solid rgb(11, 11, 11);
+        margin-top: 5%;
+        filter: contrast(2);
+        -webkit-box-shadow: 10px 21px 43px -4px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 21px 43px -4px rgba(0,0,0,0.75);
+        box-shadow: 10px 21px 43px -4px rgba(0,0,0,0.75);
+        position: relative;
+            transform-origin: 50% 50%;
+        z-index: 4;
+        position: relative;
+    }
+    a{
     
-    
+        font-size: 3vh;
+    }
     
     .menu{
         top: 10px;
@@ -46,7 +53,8 @@ a{
         position: absolute;
         border:none;
         color: rgb(11, 11, 11);
-        
+        display: flex;
+        justify-content: center        ;        
         
     }
     .menu button{
@@ -55,6 +63,7 @@ a{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         border: 0;
         text-align: left;
+
     }
 
 }
@@ -66,6 +75,28 @@ h2{
     font-weight: 200;
 
 }
- 
+
+
+
+
+.play{
+    font-size: 10rem;
+    color: rgb(11, 11, 11);
+    z-index: 6;
+    margin-top: 190px;
+    background-color: transparent;
+    position: relative;
+}
+
+    .wave {
+        position: absolute;
+        border: 200px solid #d03004;  // Cor da onda
+        border-radius: 50%;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0; // Inicialmente invisível
+        z-index: 1;
+    }
 
 

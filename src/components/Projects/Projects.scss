@@ -1,66 +1,119 @@
-body, html{
-    margin: 0;
-    padding: 0;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
-.links{ 
-    width: 100vw;
-    min-height: 100vh;
-     background-color: rgb(251, 253, 253);
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-wrap: wrap;
-     .link{
-        position: absolute;
-        width: 80%;
-        height: 50%;
-        margin: 30px;
-        padding: 10%;
-        display: inline-block; /* Necessário para aplicar transformações */
-        padding: 10px 20px;    /* Apenas para dar alguma estrutura */
-        background-color: #007BFF; /* Uma cor de fundo para visibilidade */
-        color: white;          /* Cor do texto */
-        text-decoration: none; /* Remover sublinhado padrão para links */
-        transition: transform 0.3s ease; /* Adiciona uma transição suave para o hover */
-        
-        /* Aplica a perspectiva lateral (inclinação) */
-        transform: skewZ(-15deg); 
-    }
-    .link1{
-        
-        transform: skew(-15deg); 
-     }
-     .link1:hover{
-        background-color: rgb(204, 209, 209);
-        transform: skewZ(-5deg);
-     }
-     .link2:hover{
-        background-color: rgb(227, 230, 230);
-        transform: skewZ(-5deg);
-     }
-     h3{
-        font-size: 9em;
-     }
-    }
-    .back{
-       font-size: 3rem;
-       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        border: 0ch;
-       position: fixed;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-
-       height: 90px;
-       left: 0%;
-       top: 10%;
-    }
-
-    .back:hover{ 
-        background-color: rgb(67, 196, 196);
-        
-    }
-    .original-transform {
-        transform-origin: 45% 66%;
-        transform: rotate(360deg) translate(-52px, -14px) scale(0.78, 0.86) skew(6deg, 28deg);
+.links {
+   overflow: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(171, 30, 30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  .link {
+    border-radius: 9px;
+    width: 1200px;
+    height:fit-content;
+    display: inline-block; /* Necessário para aplicar transformações */
+/* Apenas para dar alguma estrutura */
+    background-color: #000000; /* Uma cor de fundo para visibilidade */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remover sublinhado padrão para links */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o hover */
+   padding: 21%;
+    /* Aplica a perspectiva lateral (inclinação) */
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px 50px 37px 20px rgba(0,0,0,0.82); 
+    box-shadow: 0px 10px 13px -7px #000000, -1px 50px 37px 20px rgba(0,0,0,0.82);
+      li{
+         white-space: nowrap;
+         font-size: 7rem;
+         text-transform: uppercase;
+         font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+         list-style: none;
+         background-color: #000000;
+         color: #e1d9b6;
+         width: fit-content;
+         padding:1%;
+         height: 200px;
       }
+   }
+ 
+}
+  h3 {
+    font-size: 13em;
+  }
+
+
+.back {
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: 0ch;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 90px;
+  left: 0%;
+  top: 10%;
+}
+
+.back:hover {
+  background-color: rgb(67, 196, 196);
+}
+
+
+.msg-inclined {
+   font-size: 23rem;
+   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+   border: 0ch;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #d1d1d1;
+   height: 100vh; /* alterado para ocupar toda a tela */
+   width: 100vw;  /* alterado para ocupar toda a tela */
+   left: 0;
+   top: 0;
+   text-transform: uppercase;
+   position: absolute;
+   transform-origin: center center;
+   transform: rotate(-15deg);
+   // transform-origin: 45% 66%;
+   // transform: rotate(-15deg) translate(-52px, -14px) scale(0.78, 0.86) skew(6deg, 28deg);
+}
+
+   marquee {
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6); /* Ajuste os valores se necessário para obter a sombra desejada */
+   }
+
+
+h1{
+   font-size: 9rem;
+   text-transform: uppercase;
+}
+
+.positive{
+   transform: rotate(15deg);
+   margin: 800px;
+}
+.negative{
+   transform: rotate(-15deg);
+} 
+.slogan{ 
+   font-size: 15rem;
+   white-space: nowrap;
+   text-transform: uppercase;
+   width: fit-content;
+   background-color: #000000;
+   color: #d1d1d1;
+}
+
+#predios{
+   position:relative;
+   width: 800px;
+   height: 1500px;
+   object-fit: cover;
+}
