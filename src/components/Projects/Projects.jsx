@@ -34,7 +34,7 @@ gsap.to("#predios", {
     scrub:true, 
     pin: true,
     markers:true,
-    toggleActions: "play pause reverse pause"
+    toggleActions: "play pause pause pause"
   }
 })
 
